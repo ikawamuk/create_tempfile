@@ -6,13 +6,13 @@
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 13:50:54 by ikawamuk          #+#    #+#             */
-/*   Updated: 2026/02/01 14:17:44 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2026/02/01 20:24:01 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	create_tmpfile(char *template);
+int	ft_mkstemp(char *template);
 
 int	main(int argc, char *argv[])
 {
@@ -20,7 +20,7 @@ int	main(int argc, char *argv[])
 
 	if (argc != 2)
 		return (1);
-	fd = create_tmpfile(argv[1]);
+	fd = ft_mkstemp(argv[1]);
 	if (fd == -1)
 		return (1);
 	ft_putstr_fd("hello, world!\n", fd);

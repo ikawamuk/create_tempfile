@@ -6,11 +6,11 @@
 #    By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/01 14:20:04 by ikawamuk          #+#    #+#              #
-#    Updated: 2026/02/01 14:32:53 by ikawamuk         ###   ########.fr        #
+#    Updated: 2026/02/01 20:23:24 by ikawamuk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME= create_tmpfile.a
+NAME= ft_mkstemp.a
 
 CC = cc
 CFLAG = -Werror -Wall -Wextra $(addprefix -I, $(INCDIR))

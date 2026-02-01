@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   create_tmpfile.c                                   :+:      :+:    :+:   */
+/*   ft_mkstemp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ikawamuk <ikawamuk@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/01 13:19:33 by ikawamuk          #+#    #+#             */
-/*   Updated: 2026/02/01 13:59:20 by ikawamuk         ###   ########.fr       */
+/*   Updated: 2026/02/01 20:23:18 by ikawamuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	try_create_tmpfile(char *template);
 /*
 	allowde function: open, malloc, free
 */
-int	create_tmpfile(char *template)
+int	ft_mkstemp(char *template)
 {
 	int		fd;
 	size_t	i;
